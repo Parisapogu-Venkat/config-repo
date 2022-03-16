@@ -1,2 +1,3 @@
-product:
-      id: VENYCS309JU
+spring:
+    profiles:
+         active: dev
