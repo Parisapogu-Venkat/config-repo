@@ -1,10 +1,6 @@
 product:
-      id: DEV432
-      
-#Config server location
-    cloud:
-       config:
-            uri: http://localhost:8888                       
+      id: DEV432    
+                   
 #Eureka Config
 eureka: 
   instance: 
