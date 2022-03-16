@@ -1,2 +1,18 @@
 product:
-      id: SIT123
+      id: SIT432    
+                   
+#Eureka Config
+eureka: 
+  instance: 
+    prefer-ip-address: true
+  client:   
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl: 
+       defaultZone: http://${server.host}:8761/eureka/
+#Actuator configuration
+management: 
+       endpoints:
+               web:
+                 exposure:
+                        include: '*'     
