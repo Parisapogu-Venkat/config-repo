@@ -1,3 +1,14 @@
 spring:
     profiles:
-         active: dev
+         active: dev        
+---
+spring:
+  profiles: dev
+product:
+      id: DEV123
+---
+spring:
+  profiles: sit
+product:
+     id: SIT123
+  
