@@ -1,2 +1,32 @@
+server:
+  port: ${portno:5050}
+  host: ${host:localhost}
+
+#Property       
 product:
-      id: DEV420
+      id: DEV420  
+      
+#Config server location
+    cloud:
+       config:
+            uri: http://localhost:8888
+#Eureka Config
+eureka: 
+  instance: 
+    prefer-ip-address: true
+  client:   
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl: 
+       defaultZone: http://${server.host}:8761/eureka/
+#Actuator configuration
+management: 
+       endpoints:
+               web:
+                 exposure:
+                        include: '*'
+                        
+                        
+                        
+
+
