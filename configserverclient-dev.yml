@@ -1,5 +1,5 @@
 server:
-  port: ${portno:5050}
+  port: 5050
   host: ${host:localhost}
 
 #Property       
