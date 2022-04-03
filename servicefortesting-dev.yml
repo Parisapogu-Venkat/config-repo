@@ -15,5 +15,6 @@ management:
        endpoints:
                web:
                  exposure:
-                        include: '*'                   
-                        
+                        include: '*'                                        
+#Admin Server location
+spring.boot.admin.client.url=http://localhost:9999
