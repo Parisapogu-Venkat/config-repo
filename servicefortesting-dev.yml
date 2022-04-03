@@ -1,2 +1,12 @@
 product:
      id: DEVTest123
+#Eureka Configuration
+#Eureka Config
+eureka: 
+  instance: 
+    prefer-ip-address: true
+  client:   
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl: 
+       defaultZone: http://${server.host}:8761/eureka/
